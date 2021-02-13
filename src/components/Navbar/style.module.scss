@@ -1,0 +1,23 @@
+.navFlex > p{
+    color: white;
+    font-weight: 20px;
+    text-transform: uppercase;
+    
+    }
+    .navFlex{
+        display: flex;
+        padding: 5px 3em 5px 3em;
+        flex-direction: row-reverse;
+        gap: 50px;
+        .textWhite{
+          color: white;
+        }
+        .contactMeBtn{
+          background-color:black;
+          color: white;
+          padding: 1px;
+        }
+        .contactMeBtn:hover{
+        border:chartreuse 3px dotted;
+        }
+        }    

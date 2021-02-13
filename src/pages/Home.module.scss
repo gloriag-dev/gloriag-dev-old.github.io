@@ -1,0 +1,39 @@
+.wrapper{
+  background-color: black;
+  height:100vh;
+  .navFlex{
+  display: flex;
+  margin-top: 3px;
+  flex-direction: row-reverse;
+  gap: 50px;
+  .textWhite{
+    color: white;
+  }
+  .contactMeBtn{
+    background-color:black;
+    color: white;
+    padding: 1px;
+  }
+  .contactMeBtn:hover{
+  border:chartreuse 3px dotted;
+  }
+  }
+}
+.devFlex{
+  display: flex;
+  flex-direction: row;
+}
+.imgCraft{
+  background-image: url("../../public/isometric-cover@2x.png");
+  background-size: cover;
+  width: 50%;
+}
+
+
+.navFlex > p{
+color: white;
+font-weight: 20px;
+text-transform: uppercase;
+
+}
+
