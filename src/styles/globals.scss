@@ -6,6 +6,11 @@ html{
     font-family: 'Noto Sans JP', sans-serif;
 }
 
+#__next{
+    display: flex;
+    flex-direction: column;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -13,4 +18,15 @@ body{
     display: flex;
     flex-direction: column;
     
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media screen and (max-width: 576px) {  
+//    body{
+//     width: 100%;
+//     height: 100vh;
+//     display: flex;
+//     background-size: cover;
+//    }
 }
