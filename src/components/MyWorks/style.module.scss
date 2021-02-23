@@ -1,3 +1,7 @@
+.worksWrapper{
+    margin-left: 80px; 
+}
+
 .myWorks{
 color: greenyellow;
 font-size: 35px;
@@ -37,13 +41,17 @@ padding-bottom: 3px;
     justify-content: flex-end;
 }
 .greenYellowBtn{
-    background-color: greenyellow;
+    background: #AFFF50;
+    background: -moz-linear-gradient(left, #AFFF50 0%, #BBFF3E 50%, #FFFC25 100%);
+    background: -webkit-linear-gradient(left, #AFFF50 0%, #BBFF3E 50%, #FFFC25 100%);
+    background: linear-gradient(to right, #AFFF50 0%, #BBFF3E 50%, #FFFC25 100%);
     border: none;
     border-radius: 10px;
     padding: 2px;
     font-size: 30px;
     font-weight: bold;
     margin-top: 5px;
+    cursor:pointer; 
 }
 .wip{
     border-radius: 10px;
