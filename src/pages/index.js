@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar"
 import Cover from "../components/Cover"
 import MyWorks from "../components/MyWorks"
 import WhatIDo from "../components/WhatIDo"
+import MyTechStack from "../components/MyCompleteTechStack"
 
 export default function Home () {
    return (<div className={style.wrapper}>
@@ -13,5 +14,6 @@ export default function Home () {
        <Cover />
        <MyWorks />
        <WhatIDo />
+       < MyTechStack />
         </div>)
 }
