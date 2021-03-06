@@ -5,13 +5,40 @@ font-weight: bold;
 padding-bottom: 3px;
 margin-left: 80px;
 }
-.myImgWrapper{
+.myFeImgWrapper{
     display: grid;
-    grid-template-columns:  150px 150px;
+    grid-column-gap: 5em;
+    grid-row-gap: 5em;
+    grid-template-columns:  100px 100px 100px;
     flex-wrap: wrap;
     //margin-left: 450px;
+    align-items: center; 
+    justify-content: center;
 }
 
-.myImg{
+.myFeImg{
     //width: 10%
+    width: 100%;
+}
+.title{
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+.myBeImgWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+}
+.myDoImgWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    gap: 5.8em; 
+}
+.myDoImg{
+    width: 5%
+   
 }
