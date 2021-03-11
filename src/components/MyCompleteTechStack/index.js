@@ -15,12 +15,18 @@ return <div className={style.wrapper}>
         <img className={style.myFeImg} src="HTML5_Badge_512.png"></img>
         <img className={style.myFeImg} src="css3_logo.png"></img>
         <img className={style.myFeImg} src="js-logo.png"></img>
+        <img className={style.myFeImg} src="sass.jpg"></img>
+        <img className={style.myFeImg} src="bootstrap.png"></img>
+        <img className={style.myFeImg} src="mui.png"></img>
         </div>
     </div>
     <div className={style.be}>
     <h3 className={style.title}> Backend</h3>
     <div className={style.myBeImgWrapper}>
     <img className={style.myImg} src="nodejs.png"></img>
+    <p className={style.myImg}> Express</p>
+    <img className={style.myImg} src="sql.png"></img>
+    <img className={style.myImg} src="mongo.png"></img>
     </div>
     </div>
     <div className={style.devOps}>

@@ -1,5 +1,5 @@
 .stackTitle{
-    color: greenyellow;
+color: greenyellow;
 font-size: 35px;
 font-weight: bold;
 padding-bottom: 3px;
@@ -17,7 +17,6 @@ margin-left: 80px;
 }
 
 .myFeImg{
-    //width: 10%
     width: 100%;
 }
 .title{
@@ -30,6 +29,11 @@ margin-left: 80px;
     flex-direction: row;
     align-items: center; 
     justify-content: center;
+    gap: 5.8em; 
+}
+
+.myBeImg{
+    width: 75%;
 }
 .myDoImgWrapper{
     display: flex;
@@ -41,4 +45,8 @@ margin-left: 80px;
 .myDoImg{
     width: 5%
    
+}
+.myImg{
+    font-size: 4.2em; 
+    letter-spacing: 0.15em;
 }
