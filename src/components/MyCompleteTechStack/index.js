@@ -15,7 +15,7 @@ return <div className={style.wrapper}>
         <img className={style.myFeImg} src="HTML5_Badge_512.png"></img>
         <img className={style.myFeImg} src="css3_logo.png"></img>
         <img className={style.myFeImg} src="js-logo.png"></img>
-        <img className={style.myFeImg} src="sass.jpg"></img>
+        <img className={style.myFeImg} src="sass.png"></img>
         <img className={style.myFeImg} src="bootstrap.png"></img>
         <img className={style.myFeImg} src="mui.png"></img>
         </div>
@@ -35,6 +35,7 @@ return <div className={style.wrapper}>
     <img className={style.myDoImg} src="jira-1-svg.png"></img>
     <img className={style.myDoImg} src="devops.png"></img>
     <img className={style.myDoImg} src="gitlab.png"></img>
+    <img className={style.myDoImg} src="docker-logo-vector.svg"></img>
     </div>
     </div>
 
