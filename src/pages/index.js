@@ -7,6 +7,8 @@ import Cover from "../components/Cover"
 import MyWorks from "../components/MyWorks"
 import WhatIDo from "../components/WhatIDo"
 import MyTechStack from "../components/MyCompleteTechStack"
+import ContactMeForm from "../components/ContactMeForm"
+
 
 export default function Home () {
    return (<div className={style.wrapper}>
@@ -15,5 +17,6 @@ export default function Home () {
        <MyWorks />
        <WhatIDo />
        < MyTechStack />
+       <ContactMeForm />
         </div>)
 }
