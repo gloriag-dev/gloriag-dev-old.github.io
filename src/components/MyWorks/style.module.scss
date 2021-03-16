@@ -62,6 +62,17 @@ padding-bottom: 3px;
         margin-left: 1.5em;
         margin-right: 1.5em
     }
+    transition: transform .4s; 
+
+    .cover{
+        display: block;
+    }
+    &:hover{
+        transition: all 500ms;
+        .coverImage{
+            transform: scale(1.2) rotateZ(10deg);
+        }   
+    }
 }
 
 .workInProgress{
@@ -94,3 +105,4 @@ padding-bottom: 3px;
 .wip{
     border-radius: 10px;
 }
+

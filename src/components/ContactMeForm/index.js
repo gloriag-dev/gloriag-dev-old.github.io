@@ -5,6 +5,8 @@ import Button from "@material-ui/core/Button";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
+import emailjs from "emailjs-com"
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,10 +43,10 @@ export default function ContactMeForm() {
         message: data.message
       };
       await emailjs.send(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
         templateParams,
-        process.env.REACT_APP_USER_ID
+        process.env.NEXT_PUBLIC_USER_ID
       );
       reset()
       toastifySuccess();
@@ -60,8 +62,8 @@ export default function ContactMeForm() {
       <form
         className={classes.root}
         noValidate
-        autoComplete="off"
         onSubmit={handleSubmit(onSubmit)}
+        autoComplete="off"
       >
         <TextField
           id="outlined-basic"
@@ -71,7 +73,7 @@ export default function ContactMeForm() {
             required: { value: true, message: "Please enter your name" },
             maxLength: {
               value: 30,
-              message: "Please use 30 characters or less",
+              message: "Please use 30 characters or less"
             },
           })}
         />
@@ -103,7 +105,7 @@ export default function ContactMeForm() {
           })}
         />
         {errors.message && <span className='errorMessage'>Please enter a message</span>}
-        <Button> Drop a message!</Button>
+        <Button className="submit-btn" type='submit'> Drop a message!</Button>
       </form>
       <ToastContainer />
     </div>
