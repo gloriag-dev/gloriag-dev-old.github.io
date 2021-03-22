@@ -20,7 +20,15 @@ body{
     flex-direction: column;
     
 }
-
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: black
+}
+a:hover{
+    color: black
+}
 @import 'form.scss';
 
 

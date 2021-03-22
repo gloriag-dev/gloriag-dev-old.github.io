@@ -6,6 +6,7 @@ import classnames from 'classnames';
 
 
 export default function Navbar (){
+    
    return <div>
    <nav className={style.navFlex}>
    <FullScreenDialog />
@@ -13,7 +14,7 @@ export default function Navbar (){
        <p> <a className={style.navLinks} href="#myTechStack"> My Tech Stack </a></p>
        <span className={style.linkedin}></span>
        <span className={classnames('fab fa-github', style.textWhite)} />
-       <Button className={style.contactMeBtn}>Contact me</Button>
+       <Button className={style.contactMeBtn}> <a href="#contactMeForm">Contact me </a></Button>
    </nav>
    </div>
 }
