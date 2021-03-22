@@ -3,9 +3,9 @@ import style from "./style.module.scss"
 
 
 
-export default function MyTechStack (){
+export default function myTechStack (){
 return <div className={style.wrapper}>
-    <h2 className={style.stackTitle}>My Complete Tech Stack</h2>
+    <h2 className={style.stackTitle} id="myTechStack">My Complete Tech Stack</h2>
     <div className={style.fe}>
     <h3 className={style.title}> Frontend</h3>
     <div className={style.myFeImgWrapper}>
