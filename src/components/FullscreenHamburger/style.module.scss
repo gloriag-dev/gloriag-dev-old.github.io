@@ -2,3 +2,13 @@
     color: black;
     background-color: #1aff00;
 }
+.fsHamburger{
+    visibility: hidden;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) { 
+    .fsHamburger{
+        visibility: visible;
+    }
+ }

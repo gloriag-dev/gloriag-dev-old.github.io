@@ -27,4 +27,9 @@
         }
         }    
     
-      
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) { 
+  .ps .navLinks{
+    visibility: hidden;
+  }
+}

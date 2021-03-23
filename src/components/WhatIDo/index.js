@@ -5,7 +5,7 @@ import style from "./style.module.scss"
 
 export default function WhatIDo () {
 return(
-<div className={style.expWrapper}>
+<div className={style.expWrapper} id="whatIDo">
     <span className={style.whatIDoTitle}>What I Do</span>
     <div className={style.redss}>
     <img className={style.redssLogo} src="redss.png"></img>

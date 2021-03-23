@@ -41,7 +41,7 @@ export default function FullScreenDialog() {
 
 
   return (
-    <div>
+    <div className={style.fsHamburger}>
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
        +
       </Button>

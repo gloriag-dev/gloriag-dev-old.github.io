@@ -10,8 +10,9 @@ export default function Navbar (){
    return <div>
    <nav className={style.navFlex}>
    <FullScreenDialog />
-       <p> <a className={style.navLinks} href="#myWorks">My Works </a></p>
-       <p> <a className={style.navLinks} href="#myTechStack"> My Tech Stack </a></p>
+       <p className={style.ps}> <a className={style.navLinks} href="#myWorks">My Works </a></p>
+       <p className={style.ps}> <a className={style.navLinks} href="#myTechStack"> My Tech Stack </a></p>
+       <p className={style.ps}> <a className={style.navLinks} href="#whatIDo"> What I Do </a></p>
        <span className={style.linkedin}></span>
        <span className={classnames('fab fa-github', style.textWhite)} />
        <Button className={style.contactMeBtn}> <a href="#contactMeForm">Contact me </a></Button>
