@@ -8,13 +8,10 @@
         display: flex;
         padding: 5px 3em 5px 3em;
         flex-direction: row-reverse;
-        gap: 50px;
-        .textWhite{
-          color: white;
-        }
+        gap: 65px;
         .navLinks{
           text-decoration: none;
-          color: white
+          color: white;
         } 
         .contactMeBtn{
           color: black;
@@ -22,14 +19,23 @@
           font-family: 'Noto Sans JP', sans-serif;
           
         }
-        .contactMeBtn:hover{
-        border:chartreuse 3px dotted;
-        }
-        }    
+      
+        }  
+        .fab{
+            color: white;
+            font-size: 30px;
+            margin-top: 1em;
+          }
+          .icons i{
+            color: white;
+            font-size: 30px;
+            margin-top: 0.5em;
+          }
+         
     
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) { 
-  .ps .navLinks{
+  .navFlex{
     visibility: hidden;
   }
 }

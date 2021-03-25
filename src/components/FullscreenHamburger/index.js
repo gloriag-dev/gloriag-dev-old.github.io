@@ -6,10 +6,7 @@ import Dialog from '@material-ui/core/Dialog';
 import ListItem from '@material-ui/core/ListItem';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
 import CloseIcon from '@material-ui/icons/Close';
 import Slide from '@material-ui/core/Slide';
 
@@ -45,17 +42,11 @@ export default function FullScreenDialog() {
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
        +
       </Button>
-      <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
-        <AppBar className={classes.appBar}>
-          <Toolbar className={style.toolbar}>
-            <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
-              <CloseIcon />
+      <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition} className={style.menuDialog}>
+     
+            <IconButton edge="start" onClick={handleClose} aria-label="close">
+            <CloseIcon className={style.closeIt} />
             </IconButton>
-            <Typography variant="h6" className={classes.title}>
-              Menu
-            </Typography>
-          </Toolbar>
-        </AppBar>
         <List>
           <ListItem button onClick={handleClose}>
           <a href="#myTechStack">My Tech Stack</a>
@@ -63,6 +54,10 @@ export default function FullScreenDialog() {
           <Divider />
           <ListItem button onClick={handleClose}>
           <a href="#myWorks">My Works</a>
+          </ListItem>
+          <Divider />
+          <ListItem button onClick={handleClose}>
+          <a href="#whatIDo">What I Do</a>
           </ListItem>
           <Divider />
           <ListItem button onClick={handleClose}>
