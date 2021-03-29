@@ -1,4 +1,5 @@
 import React from "react";
+import style from "./style.module.scss"
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
@@ -6,6 +7,7 @@ import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import emailjs from "emailjs-com"
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -95,6 +97,7 @@ export default function ContactMeForm() {
           </span>
         )}
         <TextField
+          className={style.tf}
           id="outlined-multiline-static"
           multiline={true}
           rows={4}
