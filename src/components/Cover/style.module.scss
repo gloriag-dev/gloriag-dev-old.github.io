@@ -52,12 +52,12 @@
 @media (max-width: 575px) { 
   .developer{
     font-size: 3em;
-    text-align: left;
+    text-align: center;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    padding-left: 7em;
+    padding-left: 10em;
     line-height: 2.5em;
   }
 
@@ -67,6 +67,7 @@
     align-self: center;
     display: flex;
     flex: 1;
+    padding-left: 3em;
 
     img{
       max-width: calc(115vw - 3em);
@@ -77,7 +78,7 @@
       align-self: center;
       text-align: center;
       flex-direction: row;
-      margin-left: 17em;
+      margin-left: 30em;
     }
 }
 }
