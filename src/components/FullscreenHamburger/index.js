@@ -39,7 +39,7 @@ export default function FullScreenDialog() {
 
   return (
     <div className={style.fsHamburger}>
-      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+      <Button variant="outlined" color="primary" onClick={handleClickOpen} className={style.openMobileMenu}>
        +
       </Button>
       <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition} className={style.menuDialog}>

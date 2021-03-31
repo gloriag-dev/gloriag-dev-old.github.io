@@ -58,7 +58,7 @@ export default function ContactMeForm() {
   };
 
   return (
-    <div id="contactMeForm">
+    <div className={style.contactMeForm}>
       <h2>Contact Me</h2>
 
       <form
