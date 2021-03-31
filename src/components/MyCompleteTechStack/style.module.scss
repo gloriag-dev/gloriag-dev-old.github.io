@@ -52,11 +52,20 @@ margin-left: 80px;
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
-    
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-
+@media (max-width: 575px) {
+    .stackTitle {
+        margin-right:-13em;
+    }
+    .myFeImgWrapper{
+        margin-left: 27em;
+    }
+    .title{
+        margin-left: 21em; 
+    }
+    .myBeImgWrapper{
+        margin-left: 12em;
+    }
+    .myDoImgWrapper{
+        margin-left: 27em;
+    }
 }
