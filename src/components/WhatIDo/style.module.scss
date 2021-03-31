@@ -43,11 +43,35 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
-    
-}
+@media (max-width: 575px) { 
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-
+    .whatIDoTitle{
+        margin-right: -13em;
+    }
+    .expWrapper {
+        margin-left: 80px;
+        margin-top: 20px;
+        display: flex;
+        margin-left: 6em;
+        gap: 8em;
+        margin-top: -3em;
+    }
+    .redss{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .openReply{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 5em;
+    }
+    .myImg{
+        width: 3em !important;
+    }
 }

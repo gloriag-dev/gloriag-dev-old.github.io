@@ -5,8 +5,9 @@ import style from "./style.module.scss"
 
 export default function WhatIDo () {
 return(
-<div className={style.expWrapper} id="whatIDo">
+    <div>
     <span className={style.whatIDoTitle}>What I Do</span>
+<div className={style.expWrapper} id="whatIDo">
     <div className={style.redss}>
     <img className={style.redssLogo} src="redss.png"></img>
     <div className={style.redssExp}>
@@ -41,5 +42,6 @@ return(
     </div>
     </div>
     </div>
+</div>
 </div>
 )}
