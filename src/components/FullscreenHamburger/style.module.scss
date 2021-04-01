@@ -2,7 +2,15 @@
     color:white;
 }
 .fsHamburger{
-    visibility: hidden;
+    display: none;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-right: -18em;
+        margin-top: 0.5em;
+        .openMobileMenu{
+            padding: 22px 60px;
+            margin-right: -12em;
+        }
 }
 .closeIt {
     color:aliceblue;
@@ -43,15 +51,6 @@
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) { 
     .fsHamburger{
-        visibility: visible;
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        margin-right: -18em;
-        margin-top: 0.5em;
-        .openMobileMenu{
-            padding: 22px 60px;
-            margin-right: -12em;
-        }
+        display: block;
     }
  }

@@ -4,6 +4,11 @@
   flex-direction: row-reverse;
   gap: 65px;
   align-items: baseline;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  background-color: black;
 
   .navLinks {
     text-decoration: none;
@@ -54,6 +59,8 @@
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) {
   .navFlex {
-    visibility: hidden;
+    .navLinks, .icons, .contactMeWrapper{
+      display: none;
+    }
   }
 }
