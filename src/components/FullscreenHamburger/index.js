@@ -25,7 +25,6 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 
 export default function FullScreenDialog() {
-  const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -38,9 +37,9 @@ export default function FullScreenDialog() {
 
 
   return (
-    <div className={style.fsHamburger}>
+    <>
       <Button variant="outlined" color="primary" onClick={handleClickOpen} className={style.openMobileMenu}>
-       +
+        <i className="fas fa-hamburger"></i>
       </Button>
       <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition} className={style.menuDialog}>
      
@@ -65,6 +64,6 @@ export default function FullScreenDialog() {
           </ListItem>
         </List>
       </Dialog>
-    </div>
+    </>
   );
 }

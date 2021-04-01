@@ -6,9 +6,10 @@ import classnames from 'classnames'
 
 export default function Navbar() {
 
-   return <div>
+   return <>
+      <FullScreenDialog />
       <nav className={style.navFlex}>
-         <FullScreenDialog />
+         
          <a className={style.contactMeWrapper} href='#contactMeForm'>
             <div className={classnames(style.navLinks, style.contactMeBtn)}>Contact me</div>
          </a>
@@ -18,5 +19,5 @@ export default function Navbar() {
          <a className={style.icons} href="https://www.linkedin.com/in/gloriagiannascoli/"><i class="fab fa-linkedin-in"></i></a>
          <a className={style.icons} href="https://github.com/gloriag-dev"><i class="fab fa-github"></i></a> 
       </nav>
-   </div>
+   </>
 }

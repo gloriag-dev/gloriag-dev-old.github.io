@@ -1,17 +1,19 @@
 .toolbar {
     color:white;
 }
-.fsHamburger{
-    display: none;
-        align-items: flex-end;
-        flex-direction: column;
-        margin-right: -18em;
-        margin-top: 0.5em;
-        .openMobileMenu{
-            padding: 22px 60px;
-            margin-right: -12em;
-        }
+
+button.openMobileMenu{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: transparent !important;
+    border: none;
+    i{
+        font-size: 48px;
+    }
+    outline: none;
 }
+
 .closeIt {
     color:aliceblue;
 }
