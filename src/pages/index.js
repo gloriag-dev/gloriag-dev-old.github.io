@@ -8,15 +8,16 @@ import MyWorks from "../components/MyWorks"
 import WhatIDo from "../components/WhatIDo"
 import MyTechStack from "../components/MyCompleteTechStack"
 import ContactMeForm from "../components/ContactMeForm"
+import Footer from "../components/Footer"
 
-
-export default function Home () {
+export default function Home() {
    return (<div className={style.wrapper}>
       <Navbar />
-       <Cover />
-       <MyWorks />
-       <WhatIDo />
-       < MyTechStack />
-       <ContactMeForm />
-        </div>)
+      <Cover />
+      <MyWorks />
+      <WhatIDo />
+      <MyTechStack />
+      <ContactMeForm />
+      <Footer />
+   </div>)
 }

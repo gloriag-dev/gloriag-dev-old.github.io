@@ -1,41 +1,59 @@
-.navFlex > p{
-    color: white;
-    font-weight: 20px;
+.navFlex {
+  display: flex;
+  padding: 2em 3em 2em 3em;
+  flex-direction: row-reverse;
+  gap: 65px;
+  align-items: baseline;
+
+  .navLinks {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
     text-transform: uppercase;
-    
+    color: white;
+    padding: 0.5em ;
+    transition: all 500ms;
+    &:hover{
+      color: #66FF00
     }
-    .navFlex{
-        display: flex;
-        padding: 5px 3em 5px 3em;
-        flex-direction: row-reverse;
-        gap: 65px;
-        .navLinks{
-          text-decoration: none;
-          color: white;
-        } 
-        .contactMeBtn{
-          color: black;
-          padding: 1px;
-          font-family: 'Noto Sans JP', sans-serif;
-          
-        }
-      
-        }  
-        .fab{
-            color: white;
-            font-size: 30px;
-            margin-top: 1em;
-          }
-          .icons i{
-            color: white;
-            font-size: 30px;
-            margin-top: 0.5em;
-          }
-         
-    
+  }
+  .contactMeWrapper {
+    color: white;
+    background: linear-gradient(45deg, #66FF00, #FFF000);
+    background-position: 0% 0%; 
+    transition: all 500ms;
+    .navLinks{
+      margin: 4px;
+      background-color: black;
+      display: block;
+      padding: 0.5em 2em;
+    }
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+
+.icons{
+  transition: all 500ms;
+  i {
+    font-size: 30px;
+    //margin-top: 0.25em;
+    transition: all 500ms;
+  }
+  &:hover{
+      i{
+        color: white !important;
+        background-color: white;
+        background-image:unset;
+        transform: scale(1.5);
+      }    
+  }
+} 
+
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) { 
-  .navFlex{
+@media (max-width: 575px) {
+  .navFlex {
     visibility: hidden;
   }
 }
