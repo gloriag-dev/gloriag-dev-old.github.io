@@ -29,10 +29,12 @@ padding-bottom: 3px;
     right:0;
 }
 .cover{
-
+   
     position: relative;
     margin-bottom: 50px;
-
+    img{
+        transition: all 1s;
+    }
     .coverImage{
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;

@@ -5,8 +5,10 @@ import style from "./style.module.scss"
 function MySingleWork(props){
 
     return <div className={style.imagesWrapper}>
-        <div className={style.cover}>
-            <img src={props.coverImage} className={style.coverImage}></img> 
+        <div className={style.cover}>   
+            <div style={{overflow: "hidden", borderTopLeftRadius: "6px", borderTopRightRadius: "6px"}}>
+            <img src={props.coverImage} className={style.coverImage}></img>
+            </div> 
             <img src={props.logoImage} className={style.coverLogo}></img>
         </div>
         <div className={style.content}> 
