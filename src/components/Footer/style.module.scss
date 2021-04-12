@@ -1,0 +1,15 @@
+.dragon{
+    max-width: 25em;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex:1;
+    margin: 0 auto;
+}
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+    .dragon {
+    margin-right: -16em;
+}
+}

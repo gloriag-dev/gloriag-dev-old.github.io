@@ -5,16 +5,21 @@
 }
 
 .tf{
+    flex:1;
     textarea{
         color: #1aff00;
     }
+}
+
+.contactMeForm{
+    margin: 0 auto;
 }
 
 
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) { 
-.contactMeForm{
-    margin-right:-32em;
-}
+    .contactMeForm{
+    margin-right: -27em;
+    }
 }

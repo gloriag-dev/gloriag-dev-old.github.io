@@ -12,7 +12,7 @@ return(
     <img className={style.redssLogo} src="redss.png"></img>
     <div className={style.redssExp}>
     <p className={style.ps}>Red Software Systems - September 2020 - March 2021</p>
-    <p className={style.ps}>Worked on frontend and backend of various projects in fintech area with agile approach</p>
+    <p className={style.ps}>Worked on frontend and backend of various projects in fintech, insurance and AI areas with agile approach</p>
     <p className={style.ps}>Tech Stack</p>
     <div className={style.redssTechStack}>
         <img className={style.myImg} src="react.png"></img>
@@ -29,7 +29,7 @@ return(
     <img className={style.openReplyLogo} src="openreply.png"></img>
     <div className={style.openReplyExp}> 
     <p className={style.ps}>Open Reply - March 2021 - Now</p>
-    <p className={style.ps}>Working on frontend of fintech apps</p>
+    <p className={style.ps}>Working on frontend of Prada and Miumiu e-commerce</p>
     <p className={style.ps}>Tech Stack</p>
     <div className={style.orTechStack}>
     <img className={style.myImg} src="react.png"></img>

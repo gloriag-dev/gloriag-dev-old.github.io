@@ -58,12 +58,10 @@ export default function ContactMeForm() {
   };
 
   return (
-    <div className={style.contactMeForm}>
+    <div id="contactMeForm" className={style.contactMeForm} >
       <h2>Contact Me</h2>
-
       <form
         className={classes.root}
-        noValidate
         onSubmit={handleSubmit(onSubmit)}
         autoComplete="off"
       >
