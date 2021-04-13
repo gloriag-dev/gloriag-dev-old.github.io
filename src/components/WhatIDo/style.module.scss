@@ -49,7 +49,7 @@
 @media (max-width: 575px) { 
 
     .whatIDoTitle{
-        margin-right: -16em;
+        margin-right: -17em;
         margin-top: 2em;
         font-size: 50px;
     }
@@ -77,12 +77,27 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-top: -12em;
     }
     .myImg{
-        width: 3em !important;
+        width: 5em !important;
     }
     .ps{
         font-size: 2em;
     }
+    .redssTechStack{
+        margin-top: 4em;
+        margin-left: 14em; 
+    }
+    .orTechStack{
+        margin-left: 7em;
+    }
+
+    .redssLogo{
+        width: 75vw;
+        height: auto;;
+    }
+    .openReplyLogo{
+        width: 75vw;
+    height: auto;
+}
 }
