@@ -54,17 +54,19 @@ margin-left: 80px;
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) {
     .stackTitle {
-        margin-right:-13em;
+        margin-right:-15em;
+        font-size: 50px;
+        margin-top: 2em;
     }
     .myFeImgWrapper{
-        margin-left: 27em;
+        margin-left: 37em;
     }
     .title{
-        margin-left: 13em; 
-        font-size:1.8em;
+        margin-left: 16em; 
+        font-size:2em;
     }
     .myBeImgWrapper{
-        margin-left: 12em;
+        margin-left: 37em;
     }
     .myDoImgWrapper{
         margin-left: 27em;

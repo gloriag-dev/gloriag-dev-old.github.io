@@ -113,14 +113,29 @@ padding-bottom: 3px;
 @media (max-width: 575px) { 
     .singleWorkWrapper{
         width: 100vh;
+        gap: 100px;
+        margin-left: 21em; 
+        display: flex;
+        flex-direction: column;
     }
     .myWorks{
-        margin-right: -10em;
+        margin-right: -13em;
+        font-size: 50px;
     }
     .ps{
         font-size:1.8em;
     }
     .description{
-        font-size: 1.5em;
+        font-size: 1.8em;
+    }
+    .worksWrapper{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .imagesWrapper{
+        max-width: 34em;
+        max-height: 34em;
+        padding-bottom: 183px;
     }
 }
