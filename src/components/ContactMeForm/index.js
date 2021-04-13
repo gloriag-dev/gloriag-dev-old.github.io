@@ -59,7 +59,7 @@ export default function ContactMeForm() {
 
   return (
     <div id="contactMeForm" className={style.contactMeForm} >
-      <h2>Contact Me</h2>
+      <h2 className={style.formH2}>Contact Me</h2>
       <form
         className={classes.root}
         onSubmit={handleSubmit(onSubmit)}
@@ -67,6 +67,7 @@ export default function ContactMeForm() {
       >
         <TextField
           id="outlined-basic"
+          className={style.formInput}
           label="Name"
           variant="outlined"
           ref={register({
@@ -81,6 +82,7 @@ export default function ContactMeForm() {
           <span className="errorMessage">{errors.name.message}</span>
         )}
         <TextField
+          className={style.formInput}
           id="outlined-basic"
           label="Email"
           variant="outlined"
