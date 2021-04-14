@@ -19,11 +19,13 @@ margin-left: 80px;
 .myFeImg{
     width: 100%;
     transition: all 500ms ease-in;
+    position: relative;
 }
 .title{
     align-items: center; 
     justify-content: center;
     text-align: center;
+    margin-bottom: 35px;
 }
 .myBeImgWrapper{
     display: flex;
@@ -36,6 +38,7 @@ margin-left: 80px;
 .myBeImg{
     width: 75%;
     transition: all 500ms ease-in;
+    position: relative;
 }
 .myDoImgWrapper{
     display: flex;
@@ -47,17 +50,32 @@ margin-left: 80px;
 .myDoImg{
    max-height: 100px;
    transition: all 500ms ease-in;
+   position: relative;
 }
 .myImg{
     font-size: 4.2em; 
     letter-spacing: 0.15em;
     max-height: 100px;
     transition: all 500ms ease-in;
+    position: relative;
 }
 .myImg, .myFeImg, .myDoImg{
     &:hover{
         transform: scale(1.5);
     }
+    &:after {
+        content:"";
+        /* Set the element as full-size */
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        /* Set bg and hide the element + animation */
+        background-color:#000;
+        opacity:0;
+        transition: all 0.5s ease 0s;
+      }
 }
 
 

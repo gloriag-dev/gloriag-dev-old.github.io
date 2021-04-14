@@ -1,5 +1,6 @@
 import React from "react"
 import style from "./style.module.scss"
+import TechBadge from "./TechBadge"
 
 
 
@@ -9,15 +10,42 @@ return <div className={style.wrapper}>
     <div className={style.fe}>
     <h3 className={style.title}> Frontend</h3>
     <div className={style.myFeImgWrapper}>
-    <img className={style.myImg} src="react.png"></img>
-        <img className={style.myFeImg} src="Angular_full_color_logo.png"></img>
-        <img className={style.myFeImg} src="redux.png"></img>
-        <img className={style.myFeImg} src="HTML5_Badge_512.png"></img>
-        <img className={style.myFeImg} src="css3_logo.png"></img>
-        <img className={style.myFeImg} src="js-logo.png"></img>
-        <img className={style.myFeImg} src="sass.png"></img>
-        <img className={style.myFeImg} src="bootstrap.png"></img>
-        <img className={style.myFeImg} src="mui.png"></img>
+    <TechBadge
+    image={"react.png"}
+    label={"React"}>
+    </TechBadge>
+    <TechBadge
+    image={"Angular_full_color_logo.png"}
+    label={"Angular"}>
+    </TechBadge>
+    <TechBadge
+    image={"redux.png"}
+    label={"Redux"}>
+    </TechBadge>
+    <TechBadge
+    image={"HTML5_Badge_512.png"}
+    label={"HTML5"}>
+    </TechBadge>
+    <TechBadge
+    image={"css3_logo.png"}
+    label={"CSS3"}>
+    </TechBadge>
+    <TechBadge
+    image={"js-logo.png"}
+    label={"Javascript"}>
+    </TechBadge>
+    <TechBadge
+    image={"sass.png"}
+    label={"Sass"}>
+    </TechBadge>
+    <TechBadge
+    image={"bootstrap.png"}
+    label={"Bootstrap"}>
+    </TechBadge>
+    <TechBadge
+    image={"mui.png"}
+    label={"MaterialUI"}>
+    </TechBadge>
         </div>
     </div>
     <div className={style.be}>
