@@ -15,8 +15,10 @@ function MySingleWork(props){
             <p className={style.ps}>{props.title}</p>
             <span className={style.description}>{props.description}</span>
         </div>
-        
+        <a href="http://platform.tongy.it/auth/login" target="_blank">
         <button className={style.greenYellowBtn}>{props.buttonText}</button>
+        </a>
+        
     </div>
 }
 
