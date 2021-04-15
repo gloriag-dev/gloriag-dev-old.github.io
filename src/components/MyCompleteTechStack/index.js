@@ -1,6 +1,6 @@
 import React from "react"
 import style from "./style.module.scss"
-import TechBadge from "./TechBadge"
+import FeTechBadge from "../FeTechBadge"
 
 
 
@@ -10,42 +10,42 @@ return <div className={style.wrapper}>
     <div className={style.fe}>
     <h3 className={style.title}> Frontend</h3>
     <div className={style.myFeImgWrapper}>
-    <TechBadge
+    <FeTechBadge
     image={"react.png"}
     label={"React"}>
-    </TechBadge>
-    <TechBadge
+    </FeTechBadge>
+    <FeTechBadge
     image={"Angular_full_color_logo.png"}
     label={"Angular"}>
-    </TechBadge>
-    <TechBadge
+    </FeTechBadge>
+    <FeTechBadge
     image={"redux.png"}
     label={"Redux"}>
-    </TechBadge>
-    <TechBadge
+    </FeTechBadge>
+    <FeTechBadge
     image={"HTML5_Badge_512.png"}
     label={"HTML5"}>
-    </TechBadge>
-    <TechBadge
+    </FeTechBadge>
+    <FeTechBadge
     image={"css3_logo.png"}
     label={"CSS3"}>
-    </TechBadge>
-    <TechBadge
+    </FeTechBadge>
+    <FeTechBadge
     image={"js-logo.png"}
     label={"Javascript"}>
-    </TechBadge>
-    <TechBadge
+    </FeTechBadge>
+    <FeTechBadge
     image={"sass.png"}
     label={"Sass"}>
-    </TechBadge>
-    <TechBadge
+    </FeTechBadge>
+    <FeTechBadge
     image={"bootstrap.png"}
     label={"Bootstrap"}>
-    </TechBadge>
-    <TechBadge
+    </FeTechBadge>
+    <FeTechBadge
     image={"mui.png"}
     label={"MaterialUI"}>
-    </TechBadge>
+    </FeTechBadge>
         </div>
     </div>
     <div className={style.be}>
