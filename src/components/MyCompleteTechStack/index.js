@@ -1,6 +1,6 @@
 import React from "react"
 import style from "./style.module.scss"
-import FeTechBadge from "../FeTechBadge"
+import TechBadge from "../TechBadge"
 
 
 
@@ -10,60 +10,84 @@ return <div className={style.wrapper}>
     <div className={style.fe}>
     <h3 className={style.title}> Frontend</h3>
     <div className={style.myFeImgWrapper}>
-    <FeTechBadge
+    <TechBadge
     image={"react.png"}
     label={"React"}>
-    </FeTechBadge>
-    <FeTechBadge
+    </TechBadge>
+    <TechBadge
     image={"Angular_full_color_logo.png"}
     label={"Angular"}>
-    </FeTechBadge>
-    <FeTechBadge
+    </TechBadge>
+    <TechBadge
     image={"redux.png"}
     label={"Redux"}>
-    </FeTechBadge>
-    <FeTechBadge
+    </TechBadge>
+    <TechBadge
     image={"HTML5_Badge_512.png"}
     label={"HTML5"}>
-    </FeTechBadge>
-    <FeTechBadge
+    </TechBadge>
+    <TechBadge
     image={"css3_logo.png"}
     label={"CSS3"}>
-    </FeTechBadge>
-    <FeTechBadge
+    </TechBadge>
+    <TechBadge
     image={"js-logo.png"}
     label={"Javascript"}>
-    </FeTechBadge>
-    <FeTechBadge
+    </TechBadge>
+    <TechBadge
     image={"sass.png"}
     label={"Sass"}>
-    </FeTechBadge>
-    <FeTechBadge
+    </TechBadge>
+    <TechBadge
     image={"bootstrap.png"}
     label={"Bootstrap"}>
-    </FeTechBadge>
-    <FeTechBadge
+    </TechBadge>
+    <TechBadge
     image={"mui.png"}
     label={"MaterialUI"}>
-    </FeTechBadge>
+    </TechBadge>
         </div>
     </div>
     <div className={style.be}>
     <h3 className={style.title}> Backend</h3>
     <div className={style.myBeImgWrapper}>
-    <img className={style.myImg} src="nodejs.png"></img>
-    <p className={style.myImg}> Express</p>
-    <img className={style.myImg} src="sql.png"></img>
-    <img className={style.myImg} src="mongo.png"></img>
+    <TechBadge
+    image={"nodejs.png"}
+    label={"Node.js"}>
+    </TechBadge>
+    <TechBadge
+    image={"sql.png"}
+    label={"MySQL"}>
+    </TechBadge>
+    <TechBadge
+    image={"mongo.png"}
+    label={"MongoDB"}>
+    </TechBadge>
+    <TechBadge
+    image={"express.png"}
+    label={"Express"}>
+    </TechBadge>
     </div>
     </div>
     <div className={style.devOps}>
     <h3 className={style.title}> DevOps</h3>
     <div className={style.myDoImgWrapper}>
-    <img className={style.myDoImg} src="jira-1-svg.png"></img>
-    <img className={style.myDoImg} src="devops.png"></img>
-    <img className={style.myDoImg} src="gitlab.png"></img>
-    <img className={style.myDoImg} src="docker-logo-vector.svg"></img>
+    <TechBadge
+    image={"jira-1-svg.png"}
+    label={"Jira"}>
+    </TechBadge>
+    <TechBadge
+    image={"devops.png"}
+    label={"Azure DevOps"}>
+    </TechBadge>
+    <TechBadge
+    image={"gitlab.png"}
+    label={"Gitlab"}>
+    </TechBadge>
+    <TechBadge
+    image={"docker-logo-vector.svg"}
+    label={"Docker"}>
+    </TechBadge>
     </div>
     </div>
 

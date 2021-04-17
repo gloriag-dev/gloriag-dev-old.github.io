@@ -15,12 +15,6 @@ margin-left: 80px;
     align-items: center; 
     justify-content: center;
 }
-
-.myFeImg{
-    width: 100%;
-    transition: all 500ms ease-in;
-    position: relative;
-}
 .title{
     align-items: center; 
     justify-content: center;
@@ -28,24 +22,21 @@ margin-left: 80px;
     margin-bottom: 35px;
 }
 .myBeImgWrapper{
-    display: flex;
-    flex-direction: row;
+    display: grid;
     align-items: center; 
     justify-content: center;
-    gap: 5.8em; 
+    grid-column-gap: 5em;
+    grid-row-gap: 5em;
+    grid-template-columns:  100px 100px 100px 100px;
 }
 
-.myBeImg{
-    width: 75%;
-    transition: all 500ms ease-in;
-    position: relative;
-}
 .myDoImgWrapper{
-    display: flex;
-    flex-direction: row;
+    display: grid;
     align-items: center; 
     justify-content: center;
-    gap: 5.8em; 
+    grid-column-gap: 5em;
+    grid-row-gap: 5em;
+    grid-template-columns:  100px 100px 100px 100px;
 }
 .myDoImg{
    max-height: 100px;
