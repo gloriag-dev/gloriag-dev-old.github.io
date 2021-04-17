@@ -11,7 +11,6 @@ margin-left: 80px;
     grid-row-gap: 5em;
     grid-template-columns:  100px 100px 100px;
     flex-wrap: wrap;
-    //margin-left: 450px;
     align-items: center; 
     justify-content: center;
 }
@@ -25,9 +24,10 @@ margin-left: 80px;
     display: grid;
     align-items: center; 
     justify-content: center;
+    flex-wrap: wrap;
     grid-column-gap: 5em;
     grid-row-gap: 5em;
-    grid-template-columns:  100px 100px 100px 100px;
+    grid-template-columns: 100px 100px;
 }
 
 .myDoImgWrapper{
@@ -36,40 +36,8 @@ margin-left: 80px;
     justify-content: center;
     grid-column-gap: 5em;
     grid-row-gap: 5em;
-    grid-template-columns:  100px 100px 100px 100px;
+    grid-template-columns: 100px 100px;
 }
-.myDoImg{
-   max-height: 100px;
-   transition: all 500ms ease-in;
-   position: relative;
-}
-.myImg{
-    font-size: 4.2em; 
-    letter-spacing: 0.15em;
-    max-height: 100px;
-    transition: all 500ms ease-in;
-    position: relative;
-}
-.myImg, .myFeImg, .myDoImg{
-    &:hover{
-        transform: scale(1.5);
-    }
-    &:after {
-        content:"";
-        /* Set the element as full-size */
-        position:absolute;
-        left:0;
-        top:0;
-        width:100%;
-        height:100%;
-        /* Set bg and hide the element + animation */
-        background-color:#000;
-        opacity:0;
-        transition: all 0.5s ease 0s;
-      }
-}
-
-
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) {
     .stackTitle {

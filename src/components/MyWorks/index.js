@@ -23,8 +23,8 @@ function MySingleWork(props){
 }
 
 export default function MyWorks () {
-return <div className={style.worksWrapper} id="myWorks">
-    <h2 className={style.myWorks}>My Works</h2>
+return <>
+    <h2 id="myWorks">My Works</h2>
     <div className={style.singleWorkWrapper}>
     <MySingleWork
         coverImage={"awareness-tongy.png"}
@@ -41,5 +41,5 @@ return <div className={style.worksWrapper} id="myWorks">
         buttonText="Stay tuned!"
     />
     </div>
-    </div>
+    </>
 }

@@ -1,49 +1,49 @@
-.whatIDoTitle{
-    color: greenyellow;
-    font-size: 35px;
-    font-weight: bold;
-    margin-top: 20px; 
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.whatIDoWidget{
     display: flex;
-    margin-right:-2.7em;
-}
+    flex-direction: row;
+    margin-bottom: 3em;
+    &:last-of-type{
+        margin-bottom: 0em;
+    }
 
-.expWrapper{
-    margin-left: 80px;
-    margin-top: 20px; 
-}
+    p{
+        margin: 0
+    }
 
-.openReply{
-    margin-top: 20px; 
-}
+    .ps{
+        margin-bottom: 1em;
+    }
 
-.redss{
-    display: flex;
-}
-.redssTechStack{
-    display: flex;
-}
-.myImg{
-    width: 10% !important;
-}
+    .experience{
+        margin-left: 10px; 
+    }
 
-.redssExp{
-    margin-left: 10px; 
-}
-.openReply{
-    display: flex; 
-}
-.openReplyExp{
-    margin-left: 10px; 
-}
+    .headline{
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
 
-.ps{
-    font-size: 1.2em;
-}
-.orTechStack{
-    width: 75vh;
+    .techStack{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;   
+    }
+    
+    .techStackImage{
+        width: 10% !important;
+        
+    }
+
+    .imgWrapper{
+        margin-right: 25px;
+    }
+
+    .logo{
+        min-width: 200px;
+        height: auto;
+    }
+
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -83,7 +83,8 @@
         width: 5em !important;
     }
     .ps{
-        font-size: 2em;
+        //font-size: 2em;
+        margin-bottom: 2em;
     }
     .redssTechStack{
         margin-top: 4em;

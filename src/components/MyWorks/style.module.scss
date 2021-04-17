@@ -13,10 +13,11 @@ padding-bottom: 3px;
 .singleWorkWrapper{
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 80px;
 }
 .ps{
     color:black;
+    font-weight: bold;
 }
 
 .description{
@@ -60,8 +61,8 @@ padding-bottom: 3px;
     position: relative;
 
     .content{
-        margin-left: 1.5em;
-        margin-right: 1.5em
+        margin-left: 1em;
+        margin-right: 1em
     }
     transition: transform .4s; 
 
@@ -102,6 +103,26 @@ padding-bottom: 3px;
     position: absolute;
     right: -33px;
     bottom: 10px;
+    padding: 0.5em 2em 0.5em 0.5em;
+    overflow: hidden;
+    transition: all 500ms;
+    &::after{
+        content: "➤";
+        font-size: 30px;
+        position: absolute;
+        //top: calc( 50% - 1px);
+        top: 25%;
+        left:-40px;
+        transition: all 500ms;
+    }
+
+    &:hover{
+        transform: translateY(-10px);
+        transition: all 500ms;
+        &::after{
+            left: calc(100% - 40px);
+        }
+    }
 }
 .wip{
     border-radius: 10px;
@@ -111,9 +132,9 @@ padding-bottom: 3px;
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) { 
     .singleWorkWrapper{
-        width: 100vh;
-        gap: 100px;
-        margin-left: 21em; 
+        width: 100vw;
+        //gap: 100px;
+        //margin-left: 21em; 
         display: flex;
         flex-direction: column;
     }

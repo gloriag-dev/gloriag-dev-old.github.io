@@ -1,21 +1,23 @@
-.wrapper{
+.home {
   background-color: black;
-  min-height:100vh;
-  .navFlex{
-  display: flex;
-  margin-top: 3px;
-  flex-direction: row-reverse;
-  gap: 50px;
-  .textWhite{
-    color: white;
-  }
+  min-height: 100vh;
+  margin-left: 2em;
+  margin-right: 2em;
+  .navFlex {
+    display: flex;
+    margin-top: 3px;
+    flex-direction: row-reverse;
+    gap: 50px;
+    .textWhite {
+      color: white;
+    }
   }
 }
-.devFlex{
+.devFlex {
   display: flex;
   flex-direction: row;
 }
-.imgCraft{
+.imgCraft {
   background-image: url("../../public/isometric-cover@2x.png");
   background-size: cover;
   width: 50%;
