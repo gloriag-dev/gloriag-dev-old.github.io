@@ -36,7 +36,11 @@ form {
   text-align: center;
   justify-content: center;
   align-items: center;
-  gap: 1.5em;
+  gap: 1em;
+
+  .MuiFormControl-root{
+    margin: 0px;
+  }
   .MuiInputBase-root{
       &:hover{
           fieldset{
@@ -50,4 +54,19 @@ form {
     color: black;
     background-color: #1aff00 !important;
     text-transform: none;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) { 
+ 
+  form{
+    .MuiFormControl-root{
+      width: 100%;
+    }
+
+    button{
+      width: 100% !important;
+      margin: 0;
+    }
+  }
 }

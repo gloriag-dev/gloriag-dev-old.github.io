@@ -44,8 +44,10 @@ margin-left: 80px;
         font-size: 50px;
         margin-top: 2em;
     }
-    .myFeImgWrapper{
-        grid-template-columns:  100px 100px;
+    .myFeImgWrapper, .myBeImgWrapper, .myDoImgWrapper{
+        grid-template-columns:  75px 75px;
+        column-gap: 75px;
+        row-gap: 75px;
     }
     .title{
         //margin-left: 16em; 

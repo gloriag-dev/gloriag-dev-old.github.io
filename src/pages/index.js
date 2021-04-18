@@ -13,11 +13,11 @@ import Footer from "../components/Footer"
 export default function Home() {
    return (<div className={style.home}>
       <Navbar />
-       {/* <Cover /> */}
+       <Cover />
       <MyWorks />
       <WhatIDo />
-       <MyTechStack />
-      {/*<ContactMeForm /> */}
+      <MyTechStack />
+      <ContactMeForm />
       <Footer />
    </div>)
 }
