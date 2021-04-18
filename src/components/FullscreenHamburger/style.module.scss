@@ -9,6 +9,7 @@ button.openMobileMenu{
     background-color: transparent !important;
     border: none;
     z-index: 999999999999999;
+    display: none;
     i{
         font-size: 48px;
     }
@@ -56,6 +57,10 @@ button.openMobileMenu{
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) { 
     .fsHamburger{
+        display: block;
+    }
+
+    button.openMobileMenu{
         display: block;
     }
  }
