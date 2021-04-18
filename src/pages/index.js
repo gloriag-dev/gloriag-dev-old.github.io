@@ -9,9 +9,13 @@ import WhatIDo from "../components/WhatIDo"
 import MyTechStack from "../components/MyCompleteTechStack"
 import ContactMeForm from "../components/ContactMeForm"
 import Footer from "../components/Footer"
+import Helmet from 'helmet'
 
 export default function Home() {
    return (<div className={style.home}>
+      <Helmet>
+         <title>GloriaG Dev</title>
+      </Helmet>
       <Navbar />
        <Cover />
       <MyWorks />

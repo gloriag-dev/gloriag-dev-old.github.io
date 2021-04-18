@@ -15,6 +15,7 @@
     "classnames": "^2.2.6",
     "emailjs-com": "^2.6.4",
     "formik": "^2.2.6",
+    "helmet": "^4.5.0",
     "next": "10.0.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
