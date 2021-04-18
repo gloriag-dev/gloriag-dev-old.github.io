@@ -10,12 +10,13 @@ import MyTechStack from "../components/MyCompleteTechStack"
 import ContactMeForm from "../components/ContactMeForm"
 import Footer from "../components/Footer"
 import Helmet from 'helmet'
+import Head from "next/head"
 
 export default function Home() {
    return (<div className={style.home}>
-      <Helmet>
-         <title>GloriaG Dev</title>
-      </Helmet>
+   <Head>
+  <title>Gloria's Portfolio</title>
+</Head>
       <Navbar />
        <Cover />
       <MyWorks />
