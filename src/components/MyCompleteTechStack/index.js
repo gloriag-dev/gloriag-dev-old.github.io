@@ -5,8 +5,8 @@ import TechBadge from "../TechBadge"
 
 
 export default function myTechStack (){
-return <div className={style.wrapper}>
-    <h2 className={style.stackTitle} id="myTechStack">My Complete Tech Stack</h2>
+return <>
+    <h2 id="myTechStack">My Complete Tech Stack</h2>
     <div className={style.fe}>
     <h3 className={style.title}> Frontend</h3>
     <div className={style.myFeImgWrapper}>
@@ -90,6 +90,5 @@ return <div className={style.wrapper}>
     </TechBadge>
     </div>
     </div>
-
-</div>
+</>
 }

@@ -49,6 +49,34 @@
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) { 
 
+    .whatIDoWidget{
+        display: flex;
+        flex-direction: column;
+        .imgWrapper{
+            text-align: center;
+            margin: 0;
+
+            img{
+                max-width: 100px;
+                min-width: 100px;
+            }
+        }
+
+        .headline{
+            font-size: 1em;
+        }
+
+        .techStack{
+            text-align: center;
+            justify-content: center;
+        }
+
+        .experience{
+            display: block;
+            text-align: center;
+        }
+    }
+
     .whatIDoTitle{
         margin-right: -17em;
         margin-top: 2em;

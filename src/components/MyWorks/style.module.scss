@@ -61,8 +61,8 @@ padding-bottom: 3px;
     position: relative;
 
     .content{
-        margin-left: 1em;
-        margin-right: 1em
+        margin-left: 15px;
+        margin-right: 15px; 
     }
     transition: transform .4s; 
 
@@ -131,35 +131,29 @@ padding-bottom: 3px;
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) { 
-    .singleWorkWrapper{
-        width: 100vw;
-        //gap: 100px;
-        //margin-left: 21em; 
+    .singleWorkWrapper{ 
         display: flex;
         flex-direction: column;
-    }
-    .myWorks{
-        margin-right: -15em;
-        font-size: 50px;
-    }
-    .ps{
-        font-size:1.8em;
-    }
-    .description{
-        font-size: 1.8em;
-    }
-    .worksWrapper{
-        display: flex;
-        flex-direction: column;
-        margin-left: 10px;
-    }
-    .imagesWrapper{
-        max-width: 34em;
-        max-height: 34em;
-        padding-bottom: 183px;
-    }
+        gap: 2rem;
+        .imagesWrapper{
+            padding-bottom: 15px;
+        }
 
-.redssLogo{
-    width: 50vh;
-}
+        .description{
+            text-align: center;
+            display: block;
+        }
+
+        .greenYellowBtn{
+            margin-left: 15px;
+            margin-right: 15px;
+            position: relative;
+            left: unset;
+            right: unset;
+            bottom: unset;
+            margin-top: 15px;
+            font-size: 20px;
+            width: calc(100% - 30px);    
+        }
+    }
 }

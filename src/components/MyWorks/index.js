@@ -15,9 +15,13 @@ function MySingleWork(props){
             <p className={style.ps}>{props.title}</p>
             <span className={style.description}>{props.description}</span>
         </div>
-        <a href="http://platform.tongy.it/auth/login" target="_blank">
-        <button className={style.greenYellowBtn}>{props.buttonText}</button>
-        </a>
+        {props.link ?
+            <a href={props.link} target="_blank">
+            <button className={style.greenYellowBtn}>{props.buttonText}</button>
+            </a>
+            :
+            <button className={style.greenYellowBtn}>{props.buttonText}</button>
+        }
         
     </div>
 }
@@ -32,6 +36,7 @@ return <>
         title="Tongy"
         description="The platform to teach English to your children in a funny way"
         buttonText="Discover more"
+        link={"http://platform.tongy.it/auth/login"}
     />
      <MySingleWork
         coverImage={"wip.png"}

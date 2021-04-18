@@ -41,21 +41,14 @@ margin-left: 80px;
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) {
     .stackTitle {
-        margin-right:-15em;
         font-size: 50px;
         margin-top: 2em;
     }
     .myFeImgWrapper{
-        margin-left: 37em;
+        grid-template-columns:  100px 100px;
     }
     .title{
-        margin-left: 16em; 
+        //margin-left: 16em; 
         font-size:2em;
-    }
-    .myBeImgWrapper{
-        margin-left: 37em;
-    }
-    .myDoImgWrapper{
-        margin-left: 37em;
     }
 }

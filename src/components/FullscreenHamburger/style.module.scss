@@ -16,7 +16,7 @@ button.openMobileMenu{
 
 .closeIt {
     color:aliceblue;
-    font-size: 6em !important;
+    font-size: 2em !important;
 }
 
 .menuDialog{
@@ -26,7 +26,7 @@ button.openMobileMenu{
         text-align: center;
         justify-content: center;
         align-items: center;
-        font-size:3em;
+        //font-size:2em;
         flex-direction: column;
         font-weight: bold;
         
@@ -43,11 +43,12 @@ button.openMobileMenu{
             -moz-text-fill-color: transparent;
             display: flex;
             flex-direction: column;
-            line-height: 3em;
+            //line-height: 3em;
             text-align: center;
             justify-content: center;
             align-items: center;
             margin: 0 auto;
+            font-size: 1.5rem !important;
         }
     }
 }
