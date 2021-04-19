@@ -31,7 +31,8 @@
     }
     
     .techStackImage{
-        width: 14% !important;
+        width: 8% !important;
+        max-width: 75px;
     }
 
     .imgWrapper{
@@ -75,7 +76,7 @@
             grid-template-columns: auto auto auto;
 
             img{
-                width: 100% !important;
+                width: 10% !important;
                 max-width: 50px;
             }
         }
