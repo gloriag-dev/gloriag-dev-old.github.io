@@ -1,6 +1,7 @@
 import React from "react"
 import style from "./style.module.scss"
 import TechBadge from "../TechBadge"
+import { StylesContext } from "@material-ui/styles"
 
 
 
@@ -45,6 +46,10 @@ return <>
     <TechBadge
     image={"mui.png"}
     label={"MaterialUI"}>
+    </TechBadge>
+    <TechBadge
+    image={"next_logo.png"}
+    label={"Next.js"}>
     </TechBadge>
         </div>
     </div>

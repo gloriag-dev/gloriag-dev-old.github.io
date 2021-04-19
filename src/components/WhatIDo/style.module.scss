@@ -31,8 +31,7 @@
     }
     
     .techStackImage{
-        width: 10% !important;
-        
+        width: 14% !important;
     }
 
     .imgWrapper{
@@ -69,6 +68,16 @@
         .techStack{
             text-align: center;
             justify-content: center;
+            display: grid;
+            align-items: center; 
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            grid-template-columns: auto auto auto;
+
+            img{
+                width: 100% !important;
+                max-width: 50px;
+            }
         }
 
         .experience{

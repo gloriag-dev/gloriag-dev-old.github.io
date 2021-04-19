@@ -16,7 +16,7 @@ function WhatIDoWidget(props) {
             {/* <p className={style.ps}>Tech Stack:</p> */}
             <div className={style.techStack}>
                 {techStack && techStack.map((image, index) => {
-                    return <img key={index} className={style.techStackImage} src={image}></img>
+                    return  <img key={index} className={style.techStackImage} src={image}></img>
                 })}
             </div>
         </div>
@@ -34,7 +34,7 @@ export default function WhatIDo() {
                     jobPosition="Intern"
                     jobDescription="Worked on frontend and backend of various projects in fintech, insurance and AI areas with agile approach"
                     techStack={[
-                        "react.png", "Angular_full_color_logo.png", "redux.png", "HTML5_Badge_512.png", "css3_logo.png", "js-logo.png", "gitlab.png"
+                        "react.png", "Angular_full_color_logo.png", "redux.png", "HTML5_Badge_512.png", "css3_logo.png", "js-logo.png", "gitlab.png", "mui.png", "mongo.png", "nodejs.png"
                     ]}
                 />
                 <WhatIDoWidget
