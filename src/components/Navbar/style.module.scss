@@ -1,8 +1,8 @@
 .navFlex {
-  display: flex;
+  display: grid;
   padding: 2em 3em 2em 3em;
-  flex-direction: row-reverse;
-  gap: 65px;
+  grid-template-columns: repeat(6, auto);
+  grid-column-gap: 1em;
   align-items: baseline;
   position: fixed;
   top:0;
@@ -10,6 +10,8 @@
   right: 0;
   background-color: black;
   z-index: 1;
+  justify-content: right;
+  text-align: right;
 
   .navLinks {
     text-decoration: none;
@@ -28,6 +30,7 @@
     background: linear-gradient(45deg, #66FF00, #FFF000);
     background-position: 0% 0%; 
     transition: all 500ms;
+    grid-column: 1;
     .navLinks{
       margin: 4px;
       background-color: black;
