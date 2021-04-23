@@ -51,6 +51,10 @@ return <>
     image={"next_logo.png"}
     label={"Next.js"}>
     </TechBadge>
+    <TechBadge
+    image={"jquerylogo.png"}
+    label={"jQuery"}>
+    </TechBadge>
         </div>
     </div>
     <div className={style.be}>

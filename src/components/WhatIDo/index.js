@@ -45,7 +45,7 @@ export default function WhatIDo() {
                     jobPosition="Junior Frontend Developer For Prada"
                     jobDescription="Working on frontend of Prada and Miumiu e-commerce"
                     techStack={[
-                        "HTML5_Badge_512.png", "css3_logo.png", "js-logo.png"
+                        "HTML5_Badge_512.png", "css3_logo.png", "js-logo.png", "jquerylogo.png"
                     ]}
                 />
         </>)

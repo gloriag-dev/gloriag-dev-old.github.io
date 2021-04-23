@@ -133,9 +133,8 @@ padding-bottom: 3px;
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) { 
     .singleWorkWrapper{ 
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
+        display: grid;
+        grid-template-columns: 300px;
         .imagesWrapper{
             padding-bottom: 15px;
         }

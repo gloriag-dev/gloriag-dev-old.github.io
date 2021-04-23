@@ -67,7 +67,11 @@
         }
 
         .techStack{
-
+            display:grid;
+            grid-template-columns: repeat(4, 55px);
+            grid-column-gap: 0.7em;
+            grid-row-gap: 1em;
+            justify-content: center;
             img{
                 width: 80% !important;
                 max-width: 60px;
