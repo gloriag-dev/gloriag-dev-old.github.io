@@ -25,13 +25,13 @@
     }
 
     .techStack{
-        display: flex;
-        flex-direction: row;
-        gap: 15px;   
+        display:grid;
+        grid-template-columns: repeat(10, 70px); 
+        grid-column-gap: 0.6em;  
     }
     
     .techStackImage{
-        width: 8% !important;
+        width: 100% !important;
         max-width: 75px;
     }
 
@@ -67,13 +67,6 @@
         }
 
         .techStack{
-            text-align: center;
-            justify-content: center;
-            display: grid;
-            align-items: center; 
-            grid-column-gap: 1em;
-            grid-row-gap: 1em;
-            grid-template-columns: auto auto auto;
 
             img{
                 width: 80% !important;

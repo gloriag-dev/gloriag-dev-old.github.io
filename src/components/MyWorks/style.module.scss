@@ -11,8 +11,9 @@ font-weight: bold;
 padding-bottom: 3px;
 }
 .singleWorkWrapper{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 350px 800px;
+    grid-column-gap: 1em;
     gap: 80px;
 }
 .ps{
