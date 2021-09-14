@@ -1,1 +1,0 @@
-This is my portfilio, you can see it at [https://gloriag-dev.github.io/](https://gloriag-dev.github.io)
