@@ -7,7 +7,7 @@ $white: #fff;
 $black: #000000;
 $darken: #232931;
 
-$primary: #ffbd39;
+$primary: #f78dc5;
 $secondary: #a0f669;
 
 
@@ -27,9 +27,9 @@ $secondary: #a0f669;
     transition:         all $transition ease;
 }
 
-html {
-	// overflow-x: hidden;
-}
+// html {
+// 	// overflow-x: hidden;
+// }
 body {
 	font-family: $font-primary;
 	background: $black;
@@ -87,6 +87,9 @@ h1, h2, h3, h4, h5,
 		margin: 0 auto;
 		padding: 0;
 		@include media-breakpoint-up(lg){
+		}
+		.resize-me-pls{
+			max-height: 200px;
 		}
 	}
 
@@ -399,7 +402,7 @@ h1, h2, h3, h4, h5,
 		height: 750px;
 		z-index: 0;
 		.slider-item {
-			background-size: cover;
+			// background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
 			height: 750px;
@@ -650,7 +653,7 @@ h1, h2, h3, h4, h5,
 	width: 100%;
 	height: 100%;
 	position: inherit;
-	background-size: cover;
+	// background-size: cover;
 	background-repeat: no-repeat;
 	@include media-breakpoint-down(md){
 	}
@@ -818,11 +821,14 @@ h1, h2, h3, h4, h5,
 		width: 100%;
 		z-index: 0;
 		position: relative;
+		border-radius:99999px;
 		.img{
+			
 			display: block;
-			width: 100%;
+			height: 40%;
 			position: relative;
 			z-index: 1;
+		
 		}
 	}
 	ul.about-info{
@@ -1015,7 +1021,7 @@ h1, h2, h3, h4, h5,
 	span{
 		position: absolute;
 		top: -38px;
-		right: 0;
+		right: -46px !important;
 		font-size: 20px;
 		font-weight: 400;
 		color: $white;
@@ -1027,6 +1033,9 @@ h1, h2, h3, h4, h5,
 .ftco-hireme{
 	background: $primary;
 	z-index: -1;
+	img{
+		opacity:0.7;
+	}
 	h2{
 		color: $white;
 		font-size: 40px;
@@ -1047,14 +1056,14 @@ h1, h2, h3, h4, h5,
 //PROJECT
 .project{
 	width: 100%;
-	height: 285px;
+	height: 400px;
 	margin-bottom: 30px;
 	position: relative;
 	z-index: 0;
 	&.img-2{
 		height: 600px;
 		@include media-breakpoint-down(sm){
-			height: 285px;
+			height: 450px;
 		}
 		.text{
 			max-width: 45%;
@@ -1187,19 +1196,19 @@ textarea.form-control {
 
 
 //ABOUT
-.about-author{
-	@include border-radius(5px);
-	img{
-	}
-	.desc{
-		h3{
-			font-size: 24px;
-		}
-	}
-	.bio{
+// .about-author{
+// 	@include border-radius(5px);
+// 	img{
+// 	}
+// 	.desc{
+// 		h3{
+// 			font-size: 24px;
+// 		}
+// 	}
+// 	.bio{
 
-	}
-}
+// 	}
+// }
 
 
 .ftco-section {
@@ -1413,7 +1422,7 @@ textarea.form-control {
 .img,
 .blog-img,
 .user-img{
-	background-size: cover;
+
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -1459,10 +1468,10 @@ textarea.form-control {
 	@include media-breakpoint-down(lg){
 		background-position: center center !important;
 	}
-	.icon{
-		span{
-		}
-	}
+	// .icon{
+	// 	span{
+	// 	}
+	// }
 	.block-18{
 		display: block;
 		width:100%;
@@ -1505,7 +1514,7 @@ textarea.form-control {
 //blocks 
 .block-20 {
 	overflow: hidden;
-	background-size: cover;
+	// background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	position: relative;
@@ -1586,16 +1595,16 @@ textarea.form-control {
 
 .block-6 {
 	margin-bottom: 40px;
-	.icon {
-		span {
-			&:before {
-			}
-		}
-	}
+	// .icon {
+	// 	span {
+	// 		&:before {
+	// 		}
+	// 	}
+	// }
 	.media-body {
-		.heading {
+		// .heading {
 
-		}
+		// }
 		p {
 			font-size: 16px;
 		}
@@ -1638,7 +1647,7 @@ textarea.form-control {
 			a{
 				color: lighten($black,10%);
 			}
-			span{}
+			// span{}
 		}
 	}
 	.box{
@@ -1683,7 +1692,7 @@ textarea.form-control {
 			a{
 				color: $white;
 			}
-			span{}
+			// span{}
 		}
 	}
 	.contact-form{
@@ -1703,8 +1712,8 @@ textarea.form-control {
 		box-shadow: none!important;
 		font-size: 15px;
 	}
-	#map {
-	}
+	// #map {
+	// }
 
 }
 
