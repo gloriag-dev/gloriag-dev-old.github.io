@@ -1677,6 +1677,7 @@ textarea.form-control {
 	}
 	.contact-form{
 		width: 100%;
+		
 	}
 }
 .contact-section {
@@ -1697,6 +1698,7 @@ textarea.form-control {
 	}
 	.contact-form{
 		width: 100%;
+		
 		.btn-primary{
 			@include media-breakpoint-down(sm){
 				display: block;

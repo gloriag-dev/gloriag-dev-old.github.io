@@ -40,7 +40,6 @@
 	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
 	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
 	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
@@ -60,7 +59,7 @@
 		          		<span class="subheading">Hello!</span>
 			            <h1 class="mb-4 mt-3">I'm <span>Gloria</span></h1>
 			         
-			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+			            <p><a href="#contact-section" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -79,7 +78,7 @@
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
 			            <h1 class="mb-4 mt-3">I'm a <span style="color:#f78dc5"> frontend developer</span> based in Milan</h1>
-			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+			            <p><a href="#contact-section" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -404,7 +403,7 @@
           <div class="col-md-12 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">My Projects</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+          
           </div>
        	 </div>
     		
@@ -455,21 +454,22 @@
 
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex" >
-            <form action="#" class="bg-light p-4 p-md-5 contact-form" style="background-color: #f78dc5;">
+            <form  id="contact-form" role="form" class="bg-light p-4 p-md-5 contact-form" >
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+                <input type="text" class="form-control" id="name" placeholder="Harry Potter" name="name">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+                <input type="text" class="form-control" id="email" placeholder="the_chosen_one@hogwartsmail.nw" name="email">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+                <input type="text" class="form-control" id="subject" placeholder="Defence Against The Dark Arts" name="subject">
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Draco dormiens nunquam titillandus"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5" >
+                <button type="submit" value="Send Message" class="btn btn-primary py-3 px-5" id="contact-submit" > Send! </button>
+	
               </div>
             </form>
           
@@ -502,8 +502,32 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
+  <script src="/form-validation/jquery.form.js"></script> 
+  <script src="/form-validation/jquery.validate.min.js"></script>
   
   <script src="js/main.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+            var serviceID = "Personal Website Mail"; //service_f0rr86c
+            var templateID = "template_gloriag-dev";
+            var userID = "user_AmDBWJNsGtLZdYsW4dIeo";
+
+        (function() {
+        emailjs.init(userID);
+        })();
+
+        function sendMail(){
+            // console.log("I am sending the mail");
+            var templateParams  = {
+                name: document.getElementById("name").value,
+                subject: document.getElementById("subject").value,
+                replyTo: document.getElementById("email").value,
+                message: document.getElementById("message").value,
+            }
+            emailjs.send(serviceID, templateID, templateParams, userID);
+        }
+        document.getElementById('contact-form').addEventListener('submit', sendMail)
+    </script>
     
   </body>
 </html>
