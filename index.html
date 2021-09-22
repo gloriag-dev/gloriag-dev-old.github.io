@@ -408,7 +408,7 @@
        	 </div>
     		
     			
-  			<a href="https://tongy.it/app">	<div class="col-md-7 babbano" style="margin-left: 12em">
+  			<a href="https://tongy.it/app">	<div class="col-md-12 babbano" style="display: flex; align-items: center; justify-content: center;">
     				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/tongylogo1.jpg);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
@@ -452,7 +452,7 @@
 
      
 
-        <div class="row no-gutters block-9">
+        <div class="row  block-21">
           <div class="col-md-6 order-md-last d-flex" >
             <form  id="contact-form" role="form" class="bg-light p-4 p-md-5 contact-form" >
               <div class="form-group">
@@ -525,8 +525,15 @@
                 message: document.getElementById("message").value,
             }
             emailjs.send(serviceID, templateID, templateParams, userID);
+
+			
+			// $("contact-form").reset()
+			let $form =  document.getElementById("contact-form")
+			$form.reset()
         }
-        document.getElementById('contact-form').addEventListener('submit', sendMail)
+
+		document.getElementById('contact-form').addEventListener('submit', sendMail)
+        
     </script>
     
   </body>
