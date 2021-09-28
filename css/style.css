@@ -485,6 +485,12 @@ pre {
   margin-right: -120px;
 }
 
+@media (max-width: 575px) {
+  #about-container{
+    margin-right: unset;
+  }
+}
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0; }
