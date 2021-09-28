@@ -445,7 +445,10 @@ pre {
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll; }
-
+  .hero-btn{
+    display: flex;
+    gap:1.1em;
+  }
 .container {
   width: 100%;
   padding-right: 15px;
@@ -8987,7 +8990,14 @@ h1, h2, h3, h4, h5,
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease; }
+    .pro{
+      display: flex;
+      flex-direction: row;
+    } 
     @media (max-width: 767.98px) {
+      .pro{
+        flex-direction: column;
+      } 
       .project .overlay {
         opacity: .2; } }
   .project .text {
